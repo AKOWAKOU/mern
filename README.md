@@ -12,3 +12,4 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
    git clone git@github.com:AKOWAKOU/mern.git
    cd mern
    docker compose up --build
+   lien de UI :http://localhost:3000 

@@ -19,7 +19,7 @@ services:
     ports:
       - "3002:3002"
     environment:
-      - MONGO_URI: mongodb://localhost:27018/todo
+      - MONGO_URI=mongodb://mongo:27017/node-api
     depends_on:
       - mongo
     networks:
@@ -29,7 +29,9 @@ services:
     image: mongo:8.0
     container_name: mongo
     ports:
-      - "27017:27017"
+      - "27017:27017"  
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/node-api  
     volumes:
       - mongo-data:/data/db
     networks:
