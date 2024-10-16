@@ -19,7 +19,7 @@ services:
     ports:
       - "3002:3002"
     environment:
-      - MONGO_URI=mongodb://mongo:27017/mydatabase
+      - MONGO_URI: mongodb://localhost:27018/todo
     depends_on:
       - mongo
     networks:
